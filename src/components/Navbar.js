@@ -30,6 +30,8 @@ export default function Navbar() {
     setState("close");
   }
 
+  //Create Image Component switching src with arrow buttons
+
   return (
     <div>
       <NavContainer>
