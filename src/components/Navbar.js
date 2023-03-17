@@ -41,7 +41,7 @@ export default function Navbar() {
           <MenuSection prop={State}>
             <MenuClose src={CloseImg} onClick={closeMenu}></MenuClose>
             {menuItems.map((items, id) => (
-              <MenuItem key={id}>{items}</MenuItem>
+              <MenuItem href="/" key={id}>{items}</MenuItem>
             ))}
           </MenuSection>
         </FirstContainer>
