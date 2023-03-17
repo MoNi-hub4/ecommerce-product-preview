@@ -7,6 +7,7 @@ export const NavContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  z-index: 99;
 `;
 
 export const FirstContainer = styled.div`

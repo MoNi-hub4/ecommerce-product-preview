@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SliderSection = styled.div`
   width: 100%;
-  height: 350px;
+  height: 35vh;
   /* background: cyan; */
   position: relative;
 `;
