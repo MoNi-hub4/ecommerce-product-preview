@@ -64,7 +64,7 @@ export const AmountDiv = styled.div`
   background: hsl(223, 64%, 98%);
   height: 60px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 25px;
 `;
 export const IconPlus = styled.img`
   margin-right: 20px;
