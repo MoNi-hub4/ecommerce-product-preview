@@ -2,10 +2,13 @@ import styled from "styled-components";
 
 export const DescriptionBox = styled.div`
   padding: 20px;
+  /* box-sizing: border-box; */
 
   @media (min-width:968px){
     flex:1;
     padding: 60px;
+    padding-left: 0;
+    
   }
 `;
 
@@ -23,11 +26,23 @@ export const Title = styled.h1`
   font-weight: 700;
   margin-bottom: 15px;
   color: hsl(220, 13%, 13%);
+
+  @media (min-width:968px){
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 800;
+  }
 `;
 
 export const Description = styled.span`
   line-height: 1.6;
   color: hsl(219, 9%, 45%);
+
+  @media (min-width:968px){
+    font-size: 20px;
+    font-weight: 500;
+  }
 `;
 
 export const PriceBox = styled.div`
@@ -35,12 +50,22 @@ export const PriceBox = styled.div`
   position: relative;
   align-items: center;
   margin-top: 20px;
+
+  @media (min-width:968px){
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
 `;
 
 export const PriceNow = styled.p`
   margin-right: 20px;
   font-size: 30px;
   font-weight: 700;
+
+  @media (min-width:968px){
+    font-weight: 800;
+
+  }
 `;
 export const Callout = styled.div`
   display: flex;
@@ -61,6 +86,12 @@ export const PriceBefore = styled.p`
   font-size: 15px;
   color: hsl(219, 9%, 45%);
   font-weight: 500;
+
+  @media (min-width:968px){
+    left: 2px;
+    bottom: -80%;
+    font-weight: 600;
+  }
 `;
 export const AmountDiv = styled.div`
   display: flex;
@@ -75,6 +106,7 @@ export const AmountDiv = styled.div`
     width: 100%;
     margin: 0;
     margin-right: 20px;
+    flex: 1;
   }
 `;
 export const IconPlus = styled.img`
@@ -102,6 +134,7 @@ export const AddtoCart = styled.button`
 
     @media (min-width:968px){
       margin: 0;
+      flex: 2;
     }
 `;
 

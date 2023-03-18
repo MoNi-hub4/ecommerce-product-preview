@@ -24,6 +24,7 @@ export default function ImageSlider() {
         setImg(Img === 0 ? 3 : Img - 1);
     }
 
+    
 
   return (
     <SliderSection>
@@ -35,7 +36,7 @@ export default function ImageSlider() {
         <RightArrow src={IconNext}></RightArrow>
       </RightArrowContainer>
       <ImageThumbnailSection>
-        {ImageList.map((image, id) => <ImgThumb src={image.urlThumbnail}></ImgThumb>)}
+        {ImageList.map((image, id) => <ImgThumb src={image.urlThumbnail} key={id} onClick={() => setImg(id)}></ImgThumb>)}
       </ImageThumbnailSection>
     </SliderSection>
   );

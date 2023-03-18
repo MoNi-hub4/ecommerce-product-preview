@@ -17,7 +17,7 @@ import {
   SubTitle,
   Title,
   CartImg,
-  BottomBox
+  BottomBox,
 } from "../styledComponents/ProductDescriptionStyle";
 
 const ProductDescription = () => {
@@ -36,17 +36,15 @@ const ProductDescription = () => {
         <PriceBefore>$250.00</PriceBefore>
       </PriceBox>
       <BottomBox>
-      <AmountDiv>
-        <IconMinus src={minusImg}></IconMinus>
-        <Amount>0</Amount>
-        <IconPlus src={plusImg}></IconPlus>
-      </AmountDiv>
-      <AddtoCart>
-        <CartImg src={IconCart}></CartImg> Add to cart
-      </AddtoCart>
-
+        <AmountDiv>
+          <IconMinus src={minusImg}></IconMinus>
+          <Amount>0</Amount>
+          <IconPlus src={plusImg}></IconPlus>
+        </AmountDiv>
+        <AddtoCart>
+          <CartImg src={IconCart}></CartImg> Add to cart
+        </AddtoCart>
       </BottomBox>
-      
     </DescriptionBox>
   );
 };

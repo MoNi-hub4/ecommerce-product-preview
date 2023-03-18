@@ -24,7 +24,7 @@ export const Image = styled.img`
 
   @media (min-width: 968px) {
     border-radius: 20px;
-    width: 100%;
+    width: 70%;
   }
 `;
 
@@ -73,16 +73,18 @@ export const RightArrow = styled.img``;
 export const ImageThumbnailSection = styled.div`
   display: none;
   @media (min-width: 968px) {
-    width: 100%;
+    width: 70%;
     display: flex;
+    justify-content: space-between;
     gap: 12px;
     margin-top: 20px;
+    cursor: pointer;
   }
 `;
 
 export const ImgThumb = styled.img`
   @media (min-width: 968px) {
-    width: 140px;
+    width: 90px;
     /* height: auto; */
     border-radius: 15px;
   }
