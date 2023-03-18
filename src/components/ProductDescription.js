@@ -1,7 +1,7 @@
 import React from "react";
 import plusImg from "./images/icon-plus.svg";
 import minusImg from "./images/icon-minus.svg";
-import IconCart from './images/icon-cart-white.svg';
+import IconCart from "./images/icon-cart-white.svg";
 import {
   Amount,
   AmountDiv,
@@ -17,8 +17,8 @@ import {
   SubTitle,
   Title,
   CartImg,
+  BottomBox
 } from "../styledComponents/ProductDescriptionStyle";
-
 
 const ProductDescription = () => {
   return (
@@ -35,12 +35,18 @@ const ProductDescription = () => {
         <Callout>50%</Callout>
         <PriceBefore>$250.00</PriceBefore>
       </PriceBox>
+      <BottomBox>
       <AmountDiv>
         <IconMinus src={minusImg}></IconMinus>
         <Amount>0</Amount>
         <IconPlus src={plusImg}></IconPlus>
       </AmountDiv>
-      <AddtoCart><CartImg src={IconCart}></CartImg> Add to cart</AddtoCart>
+      <AddtoCart>
+        <CartImg src={IconCart}></CartImg> Add to cart
+      </AddtoCart>
+
+      </BottomBox>
+      
     </DescriptionBox>
   );
 };

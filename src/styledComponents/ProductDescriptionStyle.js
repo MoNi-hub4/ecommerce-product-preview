@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const DescriptionBox = styled.div`
   padding: 20px;
+
+  @media (min-width:968px){
+    flex:1;
+    padding: 60px;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -65,6 +70,12 @@ export const AmountDiv = styled.div`
   height: 60px;
   border-radius: 10px;
   margin-top: 25px;
+
+  @media (min-width:968px){
+    width: 100%;
+    margin: 0;
+    margin-right: 20px;
+  }
 `;
 export const IconPlus = styled.img`
   margin-right: 20px;
@@ -88,6 +99,10 @@ export const AddtoCart = styled.button`
     font-weight: 600;
     letter-spacing: 0.5px;
     box-shadow: rgba(255, 125, 26, 0.25) 0px 15px 30px 5px;
+
+    @media (min-width:968px){
+      margin: 0;
+    }
 `;
 
 export const CartImg = styled.img`
@@ -95,4 +110,13 @@ export const CartImg = styled.img`
     height: 15px;
     margin-right: 10px;
     
+`
+
+export const BottomBox = styled.div`
+  @media (min-width:968px){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
 `

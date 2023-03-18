@@ -7,6 +7,7 @@ import {
   LeftArrow,
   RightArrow,
   SliderSection,
+  ImageThumbnailSection,ImgThumb
 } from "../styledComponents/ImageSliderStyle";
 import {ImageList} from "./ImageList";
 import IconNext from "./images/icon-next.svg";
@@ -33,6 +34,9 @@ export default function ImageSlider() {
       <RightArrowContainer onClick={nextImg}>
         <RightArrow src={IconNext}></RightArrow>
       </RightArrowContainer>
+      <ImageThumbnailSection>
+        {ImageList.map((image, id) => <ImgThumb src={image.urlThumbnail}></ImgThumb>)}
+      </ImageThumbnailSection>
     </SliderSection>
   );
 }
