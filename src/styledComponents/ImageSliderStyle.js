@@ -12,7 +12,7 @@ export const SliderSection = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     height: auto;
   }
 `;
@@ -24,7 +24,8 @@ export const Image = styled.img`
 
   @media (min-width: 968px) {
     border-radius: 20px;
-    width: 70%;
+    width: 80%;
+    height: 80%;
   }
 `;
 
@@ -75,7 +76,7 @@ export const ImageThumbnailSection = styled.div`
   @media (min-width: 968px) {
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 12px;
     margin-top: 20px;
     cursor: pointer;
@@ -84,8 +85,8 @@ export const ImageThumbnailSection = styled.div`
 
 export const ImgThumb = styled.img`
   @media (min-width: 968px) {
-    width: 90px;
-    /* height: auto; */
+    width: 116px;
+    height: auto;
     border-radius: 15px;
   }
 `;

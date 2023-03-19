@@ -46,7 +46,7 @@ export default function Navbar() {
           </MenuSection>
         </FirstContainer>
         <SecondContainer>
-          <CartIcon src={CartImg}></CartIcon>
+          <CartIcon src={CartImg} ></CartIcon>
           <UserProfile src={UserImg}></UserProfile>
         </SecondContainer>
       </NavContainer>

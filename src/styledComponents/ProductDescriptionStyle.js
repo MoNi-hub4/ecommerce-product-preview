@@ -106,7 +106,7 @@ export const AmountDiv = styled.div`
     width: 100%;
     margin: 0;
     margin-right: 20px;
-    flex: 1;
+    flex: 2;
   }
 `;
 export const IconPlus = styled.img`
@@ -134,7 +134,7 @@ export const AddtoCart = styled.button`
 
     @media (min-width:968px){
       margin: 0;
-      flex: 2;
+      flex: 3;
     }
 `;
 
