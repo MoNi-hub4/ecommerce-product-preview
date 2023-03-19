@@ -23,3 +23,42 @@ export const Cart = styled.div`
     left: 80%;
   }
 `;
+
+export const CartHeader = styled.div`
+display: flex;
+align-items: center;
+padding-left: 20px;
+  width: 100%;
+  height: 70px;
+  /* background:cyan; */
+  border-bottom: 2px solid hsl(223, 64%, 98%); 
+  font-weight: 800;
+  font-size: 18px;
+`
+
+export const CartBody = styled.div`
+/* height: auto; */
+
+
+`
+export const CartItem = styled.div`
+
+`
+
+export const CartItemImg = styled.img`
+
+`
+export const CartItemDescription  = styled.div``
+
+export const CartItemTitle = styled.span`
+`
+export const CartItemAmount = styled.span``
+
+export const CartItemCount = styled.span`
+`
+
+export const CartItemDeleteButton = styled.img``
+
+export const ButtonCheckout = styled.button`
+  all:unset;
+`
