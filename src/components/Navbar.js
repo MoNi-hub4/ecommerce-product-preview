@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState , useRef } from "react";
 import MenuImg from "./images/icon-menu.svg";
 import CartImg from "./images/icon-cart.svg";
 import UserImg from "./images/image-avatar.png";
+import CartMenu  from './CartMenu'
 import LogoImg from "./images/logo.svg";
 import CloseImg from "./images/icon-close.svg";
 import {
@@ -22,6 +23,8 @@ export default function Navbar() {
 
   const [State, setState] = useState("close");
 
+  const ChildRef = useRef();
+
   const openMenu = () => {
     setState("open");
   };
@@ -33,7 +36,6 @@ export default function Navbar() {
   //Create Image Component switching src with arrow buttons
 
   return (
-    <div>
       <NavContainer>
         <FirstContainer>
           <MenuButton src={MenuImg} onClick={openMenu}></MenuButton>
@@ -46,10 +48,10 @@ export default function Navbar() {
           </MenuSection>
         </FirstContainer>
         <SecondContainer>
-          <CartIcon src={CartImg} ></CartIcon>
+          <CartIcon src={CartImg} onClick ={ () => ChildRef.current.cartClick()} ></CartIcon>
           <UserProfile src={UserImg}></UserProfile>
         </SecondContainer>
+        <CartMenu ref={ChildRef} />
       </NavContainer>
-    </div>
   );
 }
