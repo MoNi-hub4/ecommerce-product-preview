@@ -11,6 +11,7 @@ import {
   CartItemAmount,
   CartItemCount,
   CartItemDeleteButton,
+  ButtonCheckout,
 } from "../styledComponents/CartMenuStyle";
 import CartImg from "./images/image-product-1-thumbnail.jpg";
 import ItemDelete from "./images/icon-delete.svg";
@@ -41,6 +42,7 @@ const CartMenu = forwardRef((props, ref) => {
             <CartItemDeleteButton src={ItemDelete}></CartItemDeleteButton>
           </CartItemDescription>
         </CartItem>
+        <ButtonCheckout>Checkout</ButtonCheckout>
       </CartBody>
     </Cart>
   );

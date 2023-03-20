@@ -101,6 +101,7 @@ export const CartIcon = styled.img`
 
   @media (min-width:968px){
     margin-right: 35px;
+    cursor: pointer;
   }
 `;
 

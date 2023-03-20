@@ -11,8 +11,7 @@ export const Cart = styled.div`
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   z-index: 98;
   display: ${(props) => (props.prop === "open" ? "block" : "none")};
 
@@ -20,7 +19,7 @@ export const Cart = styled.div`
     width: 400px;
     z-index: 99;
     margin: 0;
-    left: 80%;
+    left: 75%;
   }
 `;
 
@@ -38,6 +37,9 @@ export const CartHeader = styled.div`
 
 export const CartBody = styled.div`
   /* height: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 export const CartItem = styled.div`
   width: 100%;
@@ -85,4 +87,15 @@ export const CartItemDeleteButton = styled.img`
 
 export const ButtonCheckout = styled.button`
   all: unset;
+  background: hsl(26, 100%, 55%);
+  width: 90%;
+  text-align: center;
+  height: 60px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: hsl(25, 100%, 94%);
+  font-weight: 600;
+  letter-spacing: .5px;
 `;
