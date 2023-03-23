@@ -131,6 +131,7 @@ export const AddtoCart = styled.button`
     font-weight: 600;
     letter-spacing: 0.5px;
     box-shadow: rgba(255, 125, 26, 0.25) 0px 15px 30px 5px;
+    cursor: pointer;
 
     @media (min-width:968px){
       margin: 0;
