@@ -21,6 +21,8 @@ export default function Home() {
   const [Count, setCount] = useState([
     
   ]);
+
+
   console.log(Count);
 
   return (

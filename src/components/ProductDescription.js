@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState} from "react";
 import plusImg from "./images/icon-plus.svg";
 import minusImg from "./images/icon-minus.svg";
 import IconCart from "./images/icon-cart-white.svg";
@@ -34,6 +34,16 @@ import {
 } from "../styledComponents/CartMenuStyle";
 
 const ProductDescription = (props) => {
+  const [Num , setNum] = useState(0)
+
+  const Plus = () => {
+    setNum(() => Num + 1);
+  }
+
+  const Minus = () => {
+    setNum(() => Num < 0 ? 0 : Num -1  );
+  }
+  
   return (
     <DescriptionBox>
       <SubTitle>Sneaker Company</SubTitle>
@@ -50,9 +60,9 @@ const ProductDescription = (props) => {
       </PriceBox>
       <BottomBox>
         <AmountDiv>
-          <IconMinus src={minusImg}></IconMinus>
-          <Amount>0</Amount>
-          <IconPlus src={plusImg}></IconPlus>
+          <IconMinus src={minusImg} onClick={Minus}></IconMinus>
+          <Amount>{Num}</Amount>
+          <IconPlus src={plusImg} onClick={Plus}></IconPlus>
         </AmountDiv>
         <AddtoCart
           onClick={() => {
@@ -64,7 +74,7 @@ const ProductDescription = (props) => {
                 <CartItemDescription>
                   <CartItemTitle>Fall Limited Edition Sneakers</CartItemTitle>
                   <CartItemAmount>
-                    $125 <CartItemCount>x 3</CartItemCount>{" "}
+                    $125 <CartItemCount>x {Num}</CartItemCount>
                   </CartItemAmount>
 
                   <CartItemDeleteButton src={ItemDelete}></CartItemDeleteButton>
