@@ -16,6 +16,7 @@ import {
   SecondContainer,
   MenuSection,
   UserProfile,
+  CartCounter,
 } from "../styledComponents/NavbarStyle";
 
 export default function Navbar(props) {
@@ -49,6 +50,7 @@ export default function Navbar(props) {
         </FirstContainer>
         <SecondContainer>
           <CartIcon src={CartImg} onClick ={ () => ChildRef.current.cartClick()} ></CartIcon>
+          <CartCounter>{props.num}</CartCounter>
           <UserProfile src={UserImg}></UserProfile>
         </SecondContainer>
         <CartMenu ref={ChildRef} count = {props.count} />

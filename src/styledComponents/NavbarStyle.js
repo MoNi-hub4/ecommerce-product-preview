@@ -9,7 +9,7 @@ export const NavContainer = styled.div`
   padding: 10px;
   z-index: 99;
 
-  @media (min-width: 968px){
+  @media (min-width: 968px) {
     height: 90px;
     border-bottom: 2px solid hsl(223, 64%, 98%);
     margin-left: 20px;
@@ -20,12 +20,12 @@ export const NavContainer = styled.div`
 export const FirstContainer = styled.div`
   display: flex;
   align-items: center;
-
 `;
 
 export const SecondContainer = styled.div`
   display: flex;
   align-items: center;
+  position: relative;
 `;
 export const MenuButton = styled.img`
   /* display: inline-block; */
@@ -44,7 +44,7 @@ export const LogoName = styled.img`
   width: 100%;
   margin-left: 20px;
 
-  @media (min-width:968px){
+  @media (min-width: 968px) {
     margin-left: 0;
   }
 `;
@@ -60,7 +60,7 @@ export const MenuSection = styled.div`
   top: 0;
   left: ${(props) => (props.prop === "open" ? "0" : "-800px")};
 
-  @media (min-width: 968px){
+  @media (min-width: 968px) {
     width: auto;
     height: auto;
     top: auto;
@@ -84,12 +84,12 @@ export const MenuClose = styled.img`
 `;
 
 export const MenuItem = styled.a`
-    text-decoration: none;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-weight: 800;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 800;
 
-    @media (min-width: 968px) {
+  @media (min-width: 968px) {
     margin-right: 40px;
     font-weight: 500;
     color: hsl(219, 9%, 45%);
@@ -99,7 +99,7 @@ export const MenuItem = styled.a`
 export const CartIcon = styled.img`
   margin-right: 25px;
 
-  @media (min-width:968px){
+  @media (min-width: 968px) {
     margin-right: 35px;
     cursor: pointer;
   }
@@ -110,9 +110,30 @@ export const UserProfile = styled.img`
   height: 25px;
   width: 25px;
 
-  @media (min-width: 968px){
+  @media (min-width: 968px) {
     margin-right: 0;
     height: 40px;
     width: 40px;
+  }
+`;
+
+export const CartCounter = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  height: 14px;
+  width: 18px;
+  border-radius: 6px;
+  background: hsl(26, 100%, 55%);
+  position: absolute;
+  top: -4px;
+  left: 10px;
+
+  @media (min-width:968px){
+    top: 4px;
   }
 `;
