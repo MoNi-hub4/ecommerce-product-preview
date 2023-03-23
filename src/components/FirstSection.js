@@ -3,11 +3,11 @@ import { FirstSectionContainer } from '../styledComponents/FirstSectionStyle'
 import ImageSlider from './ImageSlider'
 import ProductDescription from './ProductDescription'
 
-const FirstSection = () => {
+const FirstSection = (props) => {
   return (
     <FirstSectionContainer>
         <ImageSlider />
-        <ProductDescription />
+        <ProductDescription setCount={props.setCount} />
     </FirstSectionContainer>
         
     

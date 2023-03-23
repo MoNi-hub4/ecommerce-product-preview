@@ -18,7 +18,7 @@ import {
   UserProfile,
 } from "../styledComponents/NavbarStyle";
 
-export default function Navbar() {
+export default function Navbar(props) {
   const menuItems = ["Collections", "Men", "Women", "About", "Contact"];
 
   const [State, setState] = useState("close");
@@ -51,7 +51,7 @@ export default function Navbar() {
           <CartIcon src={CartImg} onClick ={ () => ChildRef.current.cartClick()} ></CartIcon>
           <UserProfile src={UserImg}></UserProfile>
         </SecondContainer>
-        <CartMenu ref={ChildRef} />
+        <CartMenu ref={ChildRef} count = {props.count} />
       </NavContainer>
   );
 }

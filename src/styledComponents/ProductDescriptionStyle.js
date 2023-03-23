@@ -138,7 +138,7 @@ export const AddtoCart = styled.button`
     }
 `;
 
-export const CartImg = styled.img`
+export const CartImage = styled.img`
     width: 15px;
     height: 15px;
     margin-right: 10px;

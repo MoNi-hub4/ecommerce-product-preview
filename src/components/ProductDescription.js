@@ -16,11 +16,24 @@ import {
   PriceNow,
   SubTitle,
   Title,
-  CartImg,
+  CartImage,
   BottomBox,
 } from "../styledComponents/ProductDescriptionStyle";
+import CartImg from "./images/image-product-1-thumbnail.jpg";
+import ItemDelete from "./images/icon-delete.svg";
 
-const ProductDescription = () => {
+import {
+  CartItemDescription,
+  CartItem,
+  CartItemImg,
+  CartItemTitle,
+  CartImgDiv,
+  CartItemAmount,
+  CartItemCount,
+  CartItemDeleteButton,
+} from "../styledComponents/CartMenuStyle";
+
+const ProductDescription = (props) => {
   return (
     <DescriptionBox>
       <SubTitle>Sneaker Company</SubTitle>
@@ -41,8 +54,26 @@ const ProductDescription = () => {
           <Amount>0</Amount>
           <IconPlus src={plusImg}></IconPlus>
         </AmountDiv>
-        <AddtoCart>
-          <CartImg src={IconCart}></CartImg> Add to cart
+        <AddtoCart
+          onClick={() => {
+            props.setCount([
+              <CartItem>
+                <CartImgDiv>
+                  <CartItemImg src={CartImg}></CartItemImg>
+                </CartImgDiv>
+                <CartItemDescription>
+                  <CartItemTitle>Fall Limited Edition Sneakers</CartItemTitle>
+                  <CartItemAmount>
+                    $125 <CartItemCount>x 3</CartItemCount>{" "}
+                  </CartItemAmount>
+
+                  <CartItemDeleteButton src={ItemDelete}></CartItemDeleteButton>
+                </CartItemDescription>
+              </CartItem>,
+            ]);
+          }}
+        >
+          <CartImage src={IconCart}></CartImage> Add to cart
         </AddtoCart>
       </BottomBox>
     </DescriptionBox>
