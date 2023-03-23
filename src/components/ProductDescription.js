@@ -39,6 +39,11 @@ const ProductDescription = (props) => {
     props.setCartCount(props.num)
   }
 
+  const setDefault = () => {
+    props.setCartCount(0)
+    props.setnum(0)
+  }
+
   return (
     <DescriptionBox>
       <SubTitle>Sneaker Company</SubTitle>
@@ -82,7 +87,8 @@ const ProductDescription = (props) => {
                     $125 <CartItemCount>x {props.num}</CartItemCount>
                   </CartItemAmount>
 
-                  <CartItemDeleteButton src={ItemDelete}></CartItemDeleteButton>
+                  <CartItemDeleteButton src={ItemDelete} onClick={() => {props.setCount([])
+                  setDefault()}}></CartItemDeleteButton>
                 </CartItemDescription>
               </CartItem>,
             ]);
